@@ -34,3 +34,21 @@ spring:
       mode: embedded
 logging.level:
   org.hibernate.SQL: debug
+
+sap:
+  rfc:
+    functions:
+      - name: MY_FUNC
+        import:
+          - { name: PARAM1, type: CHAR, length: 10 }
+          - { name: PARAM2, type: INT, length: 4 }
+      - name: ANOTHER_FUNC
+        import:
+          - { name: USERID, type: CHAR, length: 8 }
+      - name: ZFM_IF_STCD_STATUS
+        import:
+          - { name: TAX_NO, type: CHAR, length: 10 }
+          - { name: DATE, type: CHAR, length: 8 }
+        export:
+          - { name: STATUS, type: CHAR, length: 2 }
+          - { name: MESSAGE, type: CHAR, length: 100 }

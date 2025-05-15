@@ -1,0 +1,1514 @@
+[INFO ] 09:50:04.586 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 09:50:04.638 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 48820 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 09:50:04.639 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 09:50:05.787 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 09:50:05.902 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+[INFO ] 09:50:06.980 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 09:50:07.010 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 09:50:07.012 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 09:50:07.013 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 09:50:07.186 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:50:07.187 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2494 ms
+[INFO ] 09:50:07.390 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 09:50:07.446 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 09:50:07.477 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 09:50:07.893 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 09:50:07.932 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 09:50:10.675 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@74e4be21
+[INFO ] 09:50:10.677 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 09:50:10.741 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 09:50:11.667 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 09:50:11.671 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 09:50:11.687 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'JCoConnectionManager' defined in file [D:\temp\JCoSapRfcLink\build\classes\java\main\jco\jcosaprfclink\config\saprfc\JCoConnectionManager.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'SAPConnectionProperties': Could not bind properties to 'SAPConnectionProperties' : prefix=sap.connect, ignoreInvalidFields=false, ignoreUnknownFields=true
+[INFO ] 09:50:11.687 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 09:50:11.691 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 09:50:11.714 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 09:50:11.716 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 09:50:11.729 o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 09:50:11.749 o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'sap.connect' to jco.jcosaprfclink.config.saprfc.SAPConnectionProperties:
+
+    Property: sap.connect.client
+    Value: "300"
+    Origin: class path resource [config/application-test-local.yml] - 5:13
+    Reason: java.lang.IllegalStateException: No setter found for property: client
+
+Action:
+
+Update your application's configuration
+
+[INFO ] 09:58:10.746 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 09:58:10.813 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 45904 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 09:58:10.813 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 09:58:11.972 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 09:58:12.129 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interface.
+[INFO ] 09:58:13.127 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 09:58:13.142 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 09:58:13.142 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 09:58:13.142 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 09:58:13.269 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:58:13.269 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2391 ms
+[INFO ] 09:58:13.492 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 09:58:13.539 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 09:58:13.585 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 09:58:14.013 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 09:58:14.029 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 09:58:14.388 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@41026e5c
+[INFO ] 09:58:14.397 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 09:58:14.475 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 09:58:15.862 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 09:58:15.862 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 09:58:16.422 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'JCoConnectionManager' defined in file [D:\temp\JCoSapRfcLink\build\classes\java\main\jco\jcosaprfclink\config\saprfc\JCoConnectionManager.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'SAPServerManager' defined in file [D:\temp\JCoSapRfcLink\build\classes\java\main\jco\jcosaprfclink\config\saprfc\SAPServerManager.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'taxInvoiceStateController': Unsatisfied dependency expressed through field 'jCoConnManager': Error creating bean with name 'JCoConnectionManager': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+[INFO ] 09:58:16.422 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 09:58:16.438 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 09:58:16.445 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 09:58:16.445 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 09:58:16.457 o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 09:58:16.500 o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+|  JCoConnectionManager defined in file [D:\temp\JCoSapRfcLink\build\classes\java\main\jco\jcosaprfclink\config\saprfc\JCoConnectionManager.class]
+‚Üë     ‚Üì
+|  SAPServerManager defined in file [D:\temp\JCoSapRfcLink\build\classes\java\main\jco\jcosaprfclink\config\saprfc\SAPServerManager.class]
+‚Üë     ‚Üì
+|  taxInvoiceStateController (field private jco.jcosaprfclink.config.saprfc.JCoConnectionManager jco.jcosaprfclink.controller.TaxInvoiceStateController.jCoConnManager)
+‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+[INFO ] 10:15:35.077 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 10:15:35.206 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 48288 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 10:15:35.210 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 10:15:36.942 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 10:15:37.068 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+[INFO ] 10:15:38.289 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 10:15:38.313 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 10:15:38.319 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:15:38.320 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 10:15:38.493 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:15:38.495 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3174 ms
+[INFO ] 10:15:38.861 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 10:15:38.994 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 10:15:39.079 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 10:15:39.658 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 10:15:39.717 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 10:15:40.353 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@448892f1
+[INFO ] 10:15:40.355 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 10:15:40.445 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 10:15:41.728 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 10:15:41.732 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 10:15:42.250 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JCoConnectionManager': Invocation of init method failed
+[INFO ] 10:15:42.252 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 10:15:42.258 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 10:15:42.271 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 10:15:42.276 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 10:15:42.298 o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 10:15:42.342 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JCoConnectionManager': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1810)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at jco.jcosaprfclink.JCoSapRfcLinkApplication.main(JCoSapRfcLinkApplication.java:12)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+	at java.base/java.util.Properties.put(Properties.java:1301)
+	at java.base/java.util.Properties.setProperty(Properties.java:229)
+	at jco.jcosaprfclink.config.saprfc.JCoConnectionManager.getServerProperties(JCoConnectionManager.java:46)
+	at jco.jcosaprfclink.config.saprfc.JCoConnectionManager.init(JCoConnectionManager.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 20 common frames omitted
+[INFO ] 10:17:13.007 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 10:17:13.123 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 46316 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 10:17:13.126 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 10:17:15.379 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 10:17:15.702 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 291 ms. Found 1 JPA repository interface.
+[INFO ] 10:17:17.381 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 10:17:17.408 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 10:17:17.416 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:17:17.417 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 10:17:17.753 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:17:17.754 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4514 ms
+[INFO ] 10:17:18.139 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 10:17:18.293 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 10:17:18.391 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 10:17:19.083 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 10:17:19.163 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 10:17:20.574 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@52eca410
+[INFO ] 10:17:20.591 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 10:17:20.740 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 10:17:22.602 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 10:17:22.609 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 10:17:22.664 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JCoConnectionManager': Invocation of init method failed
+[INFO ] 10:17:22.665 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 10:17:22.671 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 10:17:22.681 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 10:17:22.686 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 10:17:22.707 o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] 10:17:22.731 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JCoConnectionManager': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1810)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at jco.jcosaprfclink.JCoSapRfcLinkApplication.main(JCoSapRfcLinkApplication.java:12)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011)
+	at java.base/java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1006)
+	at java.base/java.util.Properties.put(Properties.java:1301)
+	at java.base/java.util.Properties.setProperty(Properties.java:229)
+	at jco.jcosaprfclink.config.saprfc.JCoConnectionManager.getServerProperties(JCoConnectionManager.java:44)
+	at jco.jcosaprfclink.config.saprfc.JCoConnectionManager.init(JCoConnectionManager.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 20 common frames omitted
+[INFO ] 10:19:09.818 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 10:19:09.967 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 3216 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 10:19:09.971 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 10:19:11.971 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 10:19:12.267 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 276 ms. Found 1 JPA repository interface.
+[INFO ] 10:19:13.753 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 10:19:13.782 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 10:19:13.787 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:19:13.796 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 10:19:14.028 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:19:14.030 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3944 ms
+[INFO ] 10:19:14.536 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 10:19:14.662 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 10:19:14.747 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 10:19:15.414 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 10:19:15.498 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 10:19:15.974 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5cd71ee2
+[INFO ] 10:19:15.980 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 10:19:16.103 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 10:19:17.957 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 10:19:17.962 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 10:19:18.568 j.j.config.saprfc.SapRFCConnection - RFC Server Start
+[INFO ] 10:19:18.569 j.j.config.saprfc.SAPServerManager - SAP RFC º≠πˆ Ω√¿€ Ω√µµ...
+[INFO ] 10:19:19.216 j.j.config.saprfc.SAPServerManager - SAP RFC º≠πˆ∞° ¡§ªÛ¿˚¿∏∑Œ Ω√¿€µ«æ˙Ω¿¥œ¥Ÿ.
+[WARN ] 10:19:19.327 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 10:19:20.106 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 10:19:20.144 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+[INFO ] 10:19:20.158 j.j.JCoSapRfcLinkApplication - Started JCoSapRfcLinkApplication in 11.27 seconds (process running for 17.146)
+[ERROR] 10:31:46.411 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 10:31:46.658 j.j.config.aop.TimeTraceAspect - TaxInvoiceStateController.handleRequest(..) - Total time = 0.243718s
+[INFO ] 10:31:46.658 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ Ω√¿€: TaxInvoiceStateService.processTaxInvoiceAsync(..)
+[INFO ] 10:31:46.665 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ Ω√¿€
+[INFO ] 10:31:46.743 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] jsonArray result : [{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120248200003498","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""}]
+[DEBUG] 10:31:47.417 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:31:48.023 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 10:31:49.806 jco.jcosaprfclink.utils.HttpUtil - ? º∫∞¯: ¿¿¥‰ ƒ⁄µÂ 200
+[DEBUG] 10:31:49.825 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:31:49.832 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 10:31:49.851 j.j.service.TaxInvoiceStateService - |----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+| TABLE 'ZTAXT020S'
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|CORP_BIZ_N|USER_ID                                           |MGR_DOC_NO                          |ISSUE_DD|SEND_DD |APPR_NO                 |ERR_CODE            |ERR_MSG                                                                                                                                                                                                 |RESULT    |DO|DOC_STATE_NM                  |SEND_DAT|SEND_T|SEND_USER   |MLDDT_BS|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|0123456789|01234567890123456789012345678901234567890123456789|012345678901234567890123456789012345|67890123|45678901|234567890123456789012345|67890123456789012345|67890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345|6789012345|67|890123456789012345678901234567|89012345|678901|234567890123|45678901|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|1338122865|hanssem01                                         |XS0120248200003498                  |        |20241225|2024122041000021a0000001|KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |31|Ω≈∞Ìøœ∑·                          |        |      |            |20241220|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+
+[INFO ] 10:31:49.855 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ ¡§ªÛ ¡æ∑·
+[INFO ] 10:31:49.856 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ ¡§ªÛ ¡æ∑·: TaxInvoiceStateService.processTaxInvoiceAsync(..) (3192ms)
+[INFO ] 10:31:49.857 j.j.c.TaxInvoiceStateController - [Controller] ∫Òµø±‚ ºº±›∞ËªÍº≠ √≥∏Æ º∫∞¯
+[ERROR] 10:34:12.603 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 10:34:12.634 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 10:34:12.639 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 10:34:12.668 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 10:34:12.675 j.j.config.aop.TimeTraceAspect - TaxInvoiceStateController.handleRequest(..) - Total time = 0.0722772s
+[INFO ] 10:34:12.675 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ Ω√¿€: TaxInvoiceStateService.processTaxInvoiceAsync(..)
+[INFO ] 10:34:12.676 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ Ω√¿€
+[INFO ] 10:34:12.676 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] jsonArray result : [{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120258200000001","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120258200000002","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120248200003496","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120248200003498","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""}]
+[DEBUG] 10:34:12.680 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:12.686 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:12.691 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:12.746 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:12.776 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:12.781 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        updated_at=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:12.875 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        updated_at=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:12.881 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        updated_at=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 10:34:13.491 jco.jcosaprfclink.utils.HttpUtil - ? º∫∞¯: ¿¿¥‰ ƒ⁄µÂ 200
+[DEBUG] 10:34:13.494 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.500 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:13.506 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.513 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.521 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:13.528 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.535 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.549 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.557 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 10:34:13.564 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.577 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.584 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.590 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 10:34:13.598 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 10:34:13.604 j.j.service.TaxInvoiceStateService - |----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+| TABLE 'ZTAXT020S'
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|CORP_BIZ_N|USER_ID                                           |MGR_DOC_NO                          |ISSUE_DD|SEND_DD |APPR_NO                 |ERR_CODE            |ERR_MSG                                                                                                                                                                                                 |RESULT    |DO|DOC_STATE_NM                  |SEND_DAT|SEND_T|SEND_USER   |MLDDT_BS|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|0123456789|01234567890123456789012345678901234567890123456789|012345678901234567890123456789012345|67890123|45678901|234567890123456789012345|67890123456789012345|67890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345|6789012345|67|890123456789012345678901234567|89012345|678901|234567890123|45678901|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|1338122865|hanssem01                                         |XS0120258200000001                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |01|πﬂ«‡                            |        |      |            |20250131|
+|1338122865|hanssem01                                         |XS0120258200000002                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |01|πﬂ«‡                            |        |      |            |20250131|
+|1338122865|hanssem01                                         |XS0120248200003496                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |06|πﬂ«‡√Îº“                          |        |      |            |20241220|
+|1338122865|hanssem01                                         |XS0120248200003498                  |        |20241225|2024122041000021a0000001|KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |31|Ω≈∞Ìøœ∑·                          |        |      |            |20241220|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+
+[INFO ] 10:34:13.610 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ ¡§ªÛ ¡æ∑·
+[INFO ] 10:34:13.611 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ ¡§ªÛ ¡æ∑·: TaxInvoiceStateService.processTaxInvoiceAsync(..) (935ms)
+[INFO ] 10:34:13.611 j.j.c.TaxInvoiceStateController - [Controller] ∫Òµø±‚ ºº±›∞ËªÍº≠ √≥∏Æ º∫∞¯
+[INFO ] 11:10:15.807 o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+[INFO ] 11:10:16.051 j.j.JCoSapRfcLinkApplication - Starting JCoSapRfcLinkApplication using Java 17 with PID 45656 (D:\temp\JCoSapRfcLink\build\classes\java\main started by 2023A024 in D:\temp\JCoSapRfcLink)
+[INFO ] 11:10:16.054 j.j.JCoSapRfcLinkApplication - The following 1 profile is active: "test-local"
+[INFO ] 11:10:18.736 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 11:10:18.866 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+[INFO ] 11:10:20.704 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+[INFO ] 11:10:20.726 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 11:10:20.730 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:10:20.731 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[INFO ] 11:10:21.237 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:10:21.238 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5027 ms
+[INFO ] 11:10:21.590 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 11:10:21.728 org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+[INFO ] 11:10:21.818 o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 11:10:22.567 o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 11:10:22.626 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 11:10:30.713 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2aafa84f
+[INFO ] 11:10:30.716 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 11:10:30.889 o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.4.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[INFO ] 11:10:32.575 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 11:10:32.591 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 11:10:33.506 j.j.config.saprfc.SapRFCConnection - RFC Server Start
+[INFO ] 11:10:33.559 j.j.config.saprfc.SAPServerManager - SAP RFC º≠πˆ Ω√¿€ Ω√µµ...
+[INFO ] 11:10:36.620 j.j.config.saprfc.SAPServerManager - SAP RFC º≠πˆ∞° ¡§ªÛ¿˚¿∏∑Œ Ω√¿€µ«æ˙Ω¿¥œ¥Ÿ.
+[WARN ] 11:10:36.742 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 11:10:37.619 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 11:10:37.663 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+[INFO ] 11:10:37.682 j.j.JCoSapRfcLinkApplication - Started JCoSapRfcLinkApplication in 23.798 seconds (process running for 28.729)
+[ERROR] 11:12:22.887 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 11:12:22.911 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 11:12:22.920 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 11:12:22.943 j.j.config.saprfc.SAPDataMapper - « µÂ ∫Ø»Ø ø¿∑˘: MLDDT_BSET (type: 1)
+com.sap.conn.jco.ConversionException: Cannot convert field MLDDT_BSET of type DATE to int
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:448)
+	at com.sap.conn.jco.rt.AbstractRecord.createConversionException(AbstractRecord.java:443)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:2055)
+	at com.sap.conn.jco.rt.AbstractRecord.getInt(AbstractRecord.java:3038)
+	at jco.jcosaprfclink.config.saprfc.DefaultJCoFieldConverter.convert(JCoFieldConverter.java:18)
+	at jco.jcosaprfclink.config.saprfc.SAPDataMapper.setRFCExport(SAPDataMapper.java:67)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController.handleRequest(TaxInvoiceStateController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at jco.jcosaprfclink.config.aop.TimeTraceAspect.traceTime(TimeTraceAspect.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at jco.jcosaprfclink.controller.TaxInvoiceStateController$$SpringCGLIB$$0.handleRequest(<generated>)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:1041)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:977)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:148)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:3685)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2729)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:275)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:356)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:232)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 11:12:23.091 j.j.config.aop.TimeTraceAspect - TaxInvoiceStateController.handleRequest(..) - Total time = 0.2034839s
+[INFO ] 11:12:23.091 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ Ω√¿€: TaxInvoiceStateService.processTaxInvoiceAsync(..)
+[INFO ] 11:12:23.092 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ Ω√¿€
+[INFO ] 11:12:23.114 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] jsonArray result : [{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120258200000001","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120258200000002","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120248200003496","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""},{"USER_ID":"hanssem01","APPR_NO":"","MGR_DOC_NO":"XS0120248200003498","DOC_STATE":"","ERR_MSG":"","ISSUE_DD":"","DOC_STATE_NM":"","SEND_DATE":"","CORP_BIZ_NO":"1338122865","ERR_CODE":"","SEND_USER":"","SEND_TIME":"","SEND_DD":"","MLDDT_BSET":null,"RESULT":""}]
+[DEBUG] 11:12:23.214 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:12:23.975 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:12:25.659 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:12:25.665 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:12:25.701 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:12:27.546 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:12:27.548 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:12:27.551 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 11:13:27.082 jco.jcosaprfclink.utils.HttpUtil - ? º∫∞¯: ¿¿¥‰ ƒ⁄µÂ 200
+[DEBUG] 11:13:27.865 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:27.940 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:13:27.971 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:27.977 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.054 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:13:28.061 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.123 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.129 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.158 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[DEBUG] 11:13:28.165 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.172 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.179 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.301 org.hibernate.SQL - 
+    select
+        st1_0.mgrdoc_no,
+        st1_0.appr_no,
+        st1_0.channel,
+        st1_0.corp_biz_no,
+        st1_0.created_at,
+        st1_0.doc_type,
+        st1_0.doc_type_nm,
+        st1_0.err_code,
+        st1_0.err_msg,
+        st1_0.result,
+        st1_0.send_dd,
+        st1_0.updated_at,
+        st1_0.user_id 
+    from
+        s_state_taxinvoice st1_0 
+    where
+        st1_0.mgrdoc_no=?
+[DEBUG] 11:13:28.422 org.hibernate.SQL - 
+    update
+        s_state_taxinvoice 
+    set
+        corp_biz_no=?,
+        err_code=?,
+        err_msg=?,
+        result=?,
+        user_id=? 
+    where
+        mgrdoc_no=?
+[INFO ] 11:13:28.429 j.j.service.TaxInvoiceStateService - |----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+| TABLE 'ZTAXT020S'
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|CORP_BIZ_N|USER_ID                                           |MGR_DOC_NO                          |ISSUE_DD|SEND_DD |APPR_NO                 |ERR_CODE            |ERR_MSG                                                                                                                                                                                                 |RESULT    |DO|DOC_STATE_NM                  |SEND_DAT|SEND_T|SEND_USER   |MLDDT_BS|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|0123456789|01234567890123456789012345678901234567890123456789|012345678901234567890123456789012345|67890123|45678901|234567890123456789012345|67890123456789012345|67890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345|6789012345|67|890123456789012345678901234567|89012345|678901|234567890123|45678901|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+|1338122865|hanssem01                                         |XS0120258200000001                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |01|πﬂ«‡                            |        |      |            |20250131|
+|1338122865|hanssem01                                         |XS0120258200000002                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |01|πﬂ«‡                            |        |      |            |20250131|
+|1338122865|hanssem01                                         |XS0120248200003496                  |        |        |                        |KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |06|πﬂ«‡√Îº“                          |        |      |            |20241220|
+|1338122865|hanssem01                                         |XS0120248200003498                  |        |20241225|2024122041000021a0000001|KH_COM_0000         |ºº±›∞ËªÍº≠ ¡∂»∏ øœ∑·                                                                                                                                                                                             |SUCCESS   |31|Ω≈∞Ìøœ∑·                          |        |      |            |20241220|
+|----------|--------------------------------------------------|------------------------------------|--------|--------|------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--|------------------------------|--------|------|------------|--------|
+
+[INFO ] 11:13:28.434 j.j.service.TaxInvoiceStateService - [∫Òµø±‚] ºº±›∞ËªÍº≠ ªÛ≈¬ √≥∏Æ ¡§ªÛ ¡æ∑·
+[INFO ] 11:13:28.436 j.j.config.aop.AsyncMonitorAspect - [∏¥œ≈Õ∏µ] ∫Òµø±‚ ¿€æ˜ ¡§ªÛ ¡æ∑·: TaxInvoiceStateService.processTaxInvoiceAsync(..) (65344ms)
+[INFO ] 11:13:28.438 j.j.c.TaxInvoiceStateController - [Controller] ∫Òµø±‚ ºº±›∞ËªÍº≠ √≥∏Æ º∫∞¯

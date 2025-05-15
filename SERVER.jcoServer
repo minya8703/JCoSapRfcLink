@@ -1,5 +1,5 @@
 #SAP JCo Configuration
-#Tue May 13 17:03:21 KST 2025
+#Thu May 15 15:31:15 KST 2025
 jco.server.connection_count=2
 jco.server.gwserv=sapgw00
 jco.server.progid=QH_SED
